@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="assets/Grupo 6.png">
+  <link rel="stylesheet" href="css/app.css">
+  <title>CARD CUSTOMIZE</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="forms">
+      <form action="" class="main-form">
+          <form action="" >
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name">
+            
+            <label for="color">Cor</label>
+            <input type="color" class="color" name="color" id="color">
+            
+
+          <label for="flag">Bandeira</label>
+          <select value="flag" id="flag">
+            <option value="" selected></option>
+            <option value="mastercard">MasterCard</option>
+            <option value="visa">Visa</option>
+          </select>
+          
+         
+      </form>
+        <form action="" class="side-2">
+          <label for="valid_thru" id="valid">Vencimento</label>
+          <input type="text" id="valid">
+          <label for="card_number">Número</label>
+          <input type="text" id="number">
+          
+          
+     
+         
+        </form>
+        
+       
+      </form>
+     
+    </div>
+    
+      <div class="card-main-container">
+        <div class="shadow">
+          <div class="inside">
+            <svg xmlns="http://www.w3.org/2000/svg" width="570" height="350" viewBox="0 0 570 301" class="mask">
+              <clipPath id="card">
+                <path id="Caminho_8" data-name="Caminho 8" d="M10,0H560a10,10,0,0,1,10,10V291a10,10,0,0,1-10,10H10A10,10,0,0,1,0,291V10A10,10,0,0,1,10,0Z" fill="#fff"/>
+              </clipPath>
+              
+            </svg>
+          </div>
+          <div class="items">
+            <div class="items-content">
+              <div class="imgs">
+                <img src="assets/Path (1).svg" alt="">
+                <img src="assets/Smart Chip (3).svg" alt="">
+              </div>
+              <div class="number">
+                <p id="number-field">5315 8333 9988 0008</p>
+              </div>
+              <div class="validaty">
+                <p>VALID THRU</p>
+                <p id="validaty-field">03/08</p>
+              </div>
+              <div class="name">
+                <p id="name-field">PEDRO H S FERREIRA</p>
+              </div>
+              <div class="modality">
+                <p id="modality-field">CREDIT</p>
+                <img src="assets/VISA Logo.svg" alt="" id="flag_image">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+    
+    
+  </div>
+  
+
+  <script src="js/app.js"></script>
+</body>
+</html>

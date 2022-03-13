@@ -1,0 +1,199 @@
+body {
+  background:#ffff ;
+  font-family: 'Lexend Mega', sans-serif;;
+}
+
+* {
+  margin: 0 ;
+  padding: 0;
+}
+
+p{
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+
+img {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  
+}
+
+.forms {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 250px auto auto 180px;
+ 
+}
+
+.side-2 {
+  margin-left: 50px;
+}
+
+
+
+.side-2 label, .main-form label{
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  
+}
+
+
+
+.side-2 input , .main-form input{
+ 
+  display: block;
+  width: 260px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  border: 1px solid #3333;
+
+}
+
+select {
+  display: block;
+  width: 260px;
+  height: 40px;
+  border-radius: 5px;
+  margin-bottom: 60px;
+  border: none;
+}
+
+.color {
+  padding: 5px;
+  
+}
+
+.card-main-container {
+ 
+  width: 500px;
+  
+  margin: 16em 0 0 8em;
+  
+}
+
+
+
+
+
+
+
+
+
+
+.mask {
+ 
+  clip-path: url(#card);
+  background-color: #1D6AE5;
+  transform: rotate(0deg) skewY(0deg);
+  position: absolute;
+  
+  
+}
+
+@keyframes gotit {
+  from {
+    
+    transform: rotate3d(0, 0 , 0, 0);
+  }
+  to {
+    filter:  drop-shadow(50px 60px 30px  rgb(139, 139, 139));
+    transform: rotate3d(1, 0 , 1, 40deg) skewX(-5deg) skewY(-5deg) ;
+    -webkit-font-smoothing: subpixel-antialiased;
+    
+  }
+}
+
+.inside {
+  
+  filter:  drop-shadow(3px 0 0 #333) drop-shadow(0 3px 0 #333);
+}
+
+
+
+
+.items {
+  position: relative;
+  color: #fff;
+  
+}
+
+.items-content{
+  display: grid;
+  grid-template-columns: 1fr 15px;
+  grid-template-areas: "contact modality"
+                        "contact modality"
+                        "number modality"
+                        "validaty modality"
+                        "name modality";
+  padding: 20px 0 0 25px;
+  font-size: 13px;
+  
+}
+
+
+
+.imgs {
+  margin: 2px 0 50px 0;
+}
+
+.imgs img {
+  padding-top: 20px;
+  color: white;
+}
+
+.imgs img:first-child {
+  padding-left: 7px;
+}
+
+.imgs {
+  display: grid;
+  grid-area: contact;
+}
+.number {
+  font-size: 30px;
+  padding-bottom: 25px;
+}
+
+.number {
+  grid-area: number;
+}
+
+.validaty {
+  display: flex;
+  grid-area: validaty;
+  padding-bottom: 25px;
+}
+
+.validaty p:nth-child(2) {
+  padding-left: 10px;
+}
+
+.name {
+  grid-area: name;
+  font-weight: bold;
+}
+
+.modality {
+  grid-area: modality;
+  display: grid;
+  padding-right: 10em;
+  
+
+}
+
+.modality img {
+  width: 55px;
+  padding-top: 17em;
+}
+
